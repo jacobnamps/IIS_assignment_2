@@ -34,8 +34,8 @@ Think First is a browser prototype. It tests whether asking people to commit the
 No installation is needed:
 
 ```
-git clone <this repository>
-cd think-first
+git clone https://github.com/jacobnamps/IIS_assignment_2
+cd IIS_assignment_2
 open index.html        # or double-click index.html in your file manager
 ```
 
@@ -63,8 +63,8 @@ No API key is used or needed. If a live model is added later, the key will be re
 
 - **Tool:** Claude (Anthropic).
 - **What I asked it to do:** map my Week 1–4 lecture concepts onto design choices; write the prototype code and scenario text; draw the system diagram and the screenshot storyboards; draft the report and this README.
-- **How I used or changed its suggestions:** I chose the domain, the scripted-AI approach and a simple stack. The neutral "relies on" change came from reviewing the first version. *[Maria: add one or two of your own edits here.]*
-- **How I checked the results:** I ran the data checks and the browser run-through, recomputed the scenario arithmetic, and checked that each concept cited in the report appears in the lecture slides. *[Maria: add your own check, e.g. running the app yourself.]*
+- **How I used or changed its suggestions:** I chose the domain, the scripted-AI approach and a simple stack. The neutral "relies on" change came from reviewing the first version. *[Jacob: add one or two of your own edits here.]*
+- **How I checked the results:** I ran the data checks and the browser run-through, recomputed the scenario arithmetic, and checked that each concept cited in the report appears in the lecture slides. *[Jacob: add your own check, e.g. running the app yourself.]*
 
 ## Additional files
 
