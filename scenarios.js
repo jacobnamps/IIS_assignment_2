@@ -15,7 +15,9 @@
 //   summary:        one-sentence recommendation
 //   reasoning:      2-3 sentences
 //   source:         { sheet, section, date, quote }  - the passage the claim rests on
-//   checkThis:      the fact a person should check before accepting the advice
+//   checkThis:      the facts the advice relied on (shown as 'This advice relies on').
+//                   Neutral by design: it lists what was used, not what was missed,
+//                   because a live model could not flag its own mistake.
 //
 // Incorrect advice is deliberately as fluent and confident as correct advice, and still
 // cites a real passage. That reproduces the problem from Assignment 1: grounding gives
@@ -60,7 +62,7 @@ const SCENARIOS = [
         date: "2 Sep 2026",
         quote: "£30 per month for 24 months. Phone included."
       },
-      checkThis: "Check the SIM-only price (£12) and the handset price (£480) on the second sheet."
+      checkThis: "£30 per month × 24; handset £480; SIM-only £12 per month × 24."
     },
     groundTruth: {
       correctOption: "A",
@@ -108,7 +110,7 @@ const SCENARIOS = [
         date: "15 Aug 2026",
         quote: "4.6% AER, fixed for 12 months."
       },
-      checkThis: "Check the withdrawal rules on both sheets against when you need the money."
+      checkThis: "the two interest rates, 4.6% and 3.5%."
     },
     groundTruth: {
       correctOption: "A",
@@ -149,7 +151,7 @@ const SCENARIOS = [
         date: "1 Oct 2026",
         quote: "£32 per month. Cancel any time with no fee."
       },
-      checkThis: "Check that the annual fee is non-refundable."
+      checkThis: "6 months of use; £32 per month; £300 annual fee."
     },
     groundTruth: {
       correctOption: "B",
@@ -197,7 +199,7 @@ const SCENARIOS = [
         date: "1 Nov 2026",
         quote: "After that, 29% APR on any remaining balance."
       },
-      checkThis: "Check when each rate applies, and how long £300 a month takes to clear £1,200."
+      checkThis: "the two interest rates, 29% and 24% APR."
     },
     groundTruth: {
       correctOption: "A",
@@ -281,7 +283,7 @@ const SCENARIOS = [
         date: "20 Sep 2026",
         quote: "No fee on card payments abroad."
       },
-      checkThis: "Check the cash-withdrawal fee if your plans change."
+      checkThis: "£800 of card spending; 2.99% fee vs no fee; no cash withdrawals."
     },
     groundTruth: {
       correctOption: "B",
@@ -329,7 +331,7 @@ const SCENARIOS = [
         date: "10 Oct 2026",
         quote: "Total interest on £3,000 over 12 months: £97."
       },
-      checkThis: "Check the fees section on both loan sheets."
+      checkThis: "total interest of £97 and £113."
     },
     groundTruth: {
       correctOption: "A",

@@ -139,7 +139,7 @@ function renderAdvice(s) {
         <div class="meta">${a.source.sheet} › ${a.source.section} · ${a.source.date}
           · <button class="linklike" id="show-source">Show in fact sheet</button></div>
       </div>
-      <div class="check"><strong>${declined ? "Instead:" : "Check this yourself:"}</strong> ${a.checkThis}</div>
+      <div class="check"><strong>${declined ? "Instead:" : "This advice relies on:"}</strong> ${a.checkThis}</div>
     </div>
     ${compare}`;
 }
