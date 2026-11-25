@@ -339,7 +339,7 @@ const SCENARIOS = [
       explanation:
         "Loan B's £150 fee makes it £247 in total against £113 for Loan A. The advice compared interest only. Loan A is £134 cheaper."
     }
-  }
+  },
 
   {
     id: "hotel",
