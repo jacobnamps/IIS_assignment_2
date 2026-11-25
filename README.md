@@ -16,7 +16,7 @@ Think First is a browser prototype. It tests whether asking people to commit the
 | Decline when the question is outside the fact sheets | Implemented (one scripted case) |
 | Trust rating (1–5) and final decision, logged per scenario; CSV download | Implemented |
 | Results screen: correct vs wrong advice followed, with explanations | Implemented |
-| AI advice | **Simulated**: pre-scripted in the same JSON shape a live model would return (3 correct, 3 wrong, 1 decline) |
+| AI advice | **Simulated**: pre-scripted in the same JSON shape a live model would return (4 correct, 3 wrong, 1 decline) |
 | Live LLM pipeline (retrieval, context assembly, model call, validator) | Planned |
 | Study with participants and analysis by condition | Planned |
 | Adaptive forcing (commit-first only for high-stakes decisions) | Planned |
