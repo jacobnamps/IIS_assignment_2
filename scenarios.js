@@ -340,4 +340,53 @@ const SCENARIOS = [
         "Loan B's £150 fee makes it £247 in total against £113 for Loan A. The advice compared interest only. Loan A is £134 cheaper."
     }
   }
+
+  {
+    id: "hotel",
+    title: "Hotel booking: non-refundable or refundable?",
+    situation:
+      "You're booking a hotel for a 5-night holiday. You're fairly sure you'll travel, but there is a small chance your plans could change. Which option costs less on average?",
+    options: [
+      { id: "A", label: "Option A: Non-refundable, £100 per night" },
+      { id: "B", label: "Option B: Refundable, £120 per night" }
+    ],
+    factSheets: [
+      {
+        name: "Hotel booking policies",
+        date: "Updated 1 Nov 2026",
+        sections: [
+          { heading: "Non-refundable rate", text: "£100 per night for 5 nights. No refund if cancelled." },
+          { heading: "Refundable rate", text: "£120 per night for 5 nights. Full refund if cancelled at least 48 hours before check-in." }
+        ]
+      },
+      {
+        name: "Your travel plans",
+        date: "Updated 1 Nov 2026",
+        sections: [
+          { heading: "Chance of cancelling", text: "There is a 10% chance the holiday will be cancelled." },
+          { heading: "Timing", text: "If cancelled, you will cancel at least 48 hours before check-in." },
+          { heading: "Room", text: "If the holiday goes ahead, both options provide exactly the same room and amenities." }
+        ]
+      }
+    ],
+    advice: {
+      status: "advice",
+      recommendation: "A",
+      summary: "Book the non-refundable rate (Option A).",
+      reasoning:
+        "The non-refundable rate costs £500 whatever happens. The refundable rate costs £600, which you only pay if you travel: with a 90% chance of travelling, that averages £540. Option A is about £40 cheaper on average.",
+      source: {
+        sheet: "Your travel plans",
+        section: "Chance of cancelling",
+        date: "1 Nov 2026",
+        quote: "There is a 10% chance the holiday will be cancelled."
+      },
+      checkThis: "£100 × 5 = £500; £120 × 5 = £600; a 10% chance of cancelling."
+    },
+    groundTruth: {
+      correctOption: "A",
+      adviceCorrect: true,
+      explanation: "Non-refundable £500 vs refundable £540 on average (90% × £600). The advice was correct."
+    }
+  }
 ];
