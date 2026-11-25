@@ -9,7 +9,7 @@ Think First is a browser prototype. It tests whether asking people to commit the
 
 | Part | Status |
 |---|---|
-| 7 decision scenarios with fictional, dated fact sheets | Implemented |
+| 8 decision scenarios with fictional, dated fact sheets | Implemented |
 | Think First condition (commit an answer before advice is shown) and Baseline condition | Implemented |
 | Advice card with cited passage, date, "Show in fact sheet" and "relies on" facts | Implemented |
 | Differs/matches flag comparing the advice with the person's answer | Implemented |
@@ -39,7 +39,7 @@ cd IIS_assignment_2
 open index.html        # or double-click index.html in your file manager
 ```
 
-On the start screen, choose **Think first** or **Baseline**, then work through the 7 decisions. At the end you can download your log as a CSV.
+On the start screen, choose **Think first** or **Baseline**, then work through the 8 decisions. At the end you can download your log as a CSV.
 
 To check the scenario data (that every quote exists in its fact sheet and the ground truth is consistent):
 
