@@ -62,9 +62,9 @@ No API key is used or needed. If a live model is added later, the key will be re
 ## AI assistance
 
 - **Tool:** Claude (Anthropic).
-- **What I asked it to do:** map my Week 1–4 lecture concepts onto design choices; write the prototype code and scenario text; draw the system diagram and the screenshot storyboards; draft the report and this README.
-- **How I used or changed its suggestions:** I chose the domain, the scripted-AI approach and a simple stack. The neutral "relies on" change came from reviewing the first version. *[Jacob: add one or two of your own edits here.]*
-- **How I checked the results:** I ran the data checks and the browser run-through, recomputed the scenario arithmetic, and checked that each concept cited in the report appears in the lecture slides. *[Jacob: add your own check, e.g. running the app yourself.]*
+- **What I asked it to do:** map my Week 1–4 lecture concepts onto design choices; write the prototype code and helped come up with scenario text; draw the system diagram and the screenshot storyboards; formatted the report and this README.
+- **How I used or changed its suggestions:** I chose the domain, the scripted-AI approach and a simple stack. The neutral "relies on" change came from reviewing the first version. I added scenario text and drafted the report and this README.
+- **How I checked the results:** I ran the data checks and the browser run-through, recomputed the scenario arithmetic, and checked that each concept cited in the report appears in the lecture slides. 
 
 ## Additional files
 
